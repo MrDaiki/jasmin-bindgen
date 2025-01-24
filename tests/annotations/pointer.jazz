@@ -1,0 +1,11 @@
+
+ 
+export fn test(
+    #[var="{kind: ptr}"] reg u8 a,
+    #[var="{kind: ptr}"] reg u8 b,
+    #[derived="{kind:direct, derivation: {method:size, target : a}}"] reg u64 a_size,
+    #[derived="{kind:direct, derivation: {method:size, target : b}}"] reg u64 b_size,
+    // #[derived="{kind:ptr, derivation: {method: compute, from: 'a_size+1'}}"] reg u64 buffer // not really sound : how do you interpret the compute method. For the moment let's considered this derivation forbidden
+{
+
+}

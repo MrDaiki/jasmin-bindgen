@@ -1,0 +1,11 @@
+
+
+
+export fn test(
+    reg u8 a,
+    reg u8 b,
+    reg u64 a_size,
+    reg u64 b_size
+) {
+    
+}

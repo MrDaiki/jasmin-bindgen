@@ -1,0 +1,6 @@
+(executable
+ (name jasmin_bindgen)
+ (libraries jasmin.jasmin cmdliner)
+ (flags -rectypes))
+
+(include_subdirs qualified)
